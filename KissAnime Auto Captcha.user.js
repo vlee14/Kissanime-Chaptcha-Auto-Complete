@@ -18,7 +18,7 @@
 var words = [];
 var imagesURL;
 var count = 0;
-var images = ["","","",""];
+var images = ["","","","","",""];
 var imagecount = 0;
 var imageURLcount = 0;
 var w;
@@ -42,7 +42,7 @@ function DONE(a){
     imageURLcount++;
 
     images[imagecount] = cutImage64(cutImage64(a,3),2);
-    if(imagecount == 3){
+    if(imagecount == 5){
         console.log(images);
         Complete();
     }else{
@@ -53,8 +53,8 @@ function DONE(a){
 
 function getWords(){
     var words = $("#formVerify").find("span").toArray();
-    var First = words[0].innerText;
-    var Second = words[1].innerText;
+    var First = words[1].innerText;
+    var Second = words[2].innerText;
     return [First, Second];
 }
 
