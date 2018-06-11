@@ -88,7 +88,8 @@ function getBasicJson(){
     //msg = $.ajax({type: "GET", url: "https://cdn.rawgit.com/Eltion/Kissanime-Chaptcha-Auto-Complete/111255eebd4ee25aaa2ad6d072b75ae446217d97/KissAnime.Downloader.Chaptcha.Database.json", async: false}).responseText;
     GM_xmlhttpRequest({
         method: "GET",
-        url: "https://cdn.rawgit.com/Eltion/Kissanime-Chaptcha-Auto-Complete/eee0c4153d22cec5a5327efc8d7d8ba3b37394d9/KissAnime.Downloader.Chaptcha.Database2.json",
+        //url: "https://cdn.rawgit.com/Eltion/Kissanime-Chaptcha-Auto-Complete/eee0c4153d22cec5a5327efc8d7d8ba3b37394d9/KissAnime.Downloader.Chaptcha.Database2.json",
+        url: "https://raw.githubusercontent.com/vlee14/Kissanime-Chaptcha-Auto-Complete/master/KissAnime.Downloader.Chaptcha.Database3.json",
         synchronous: true,
         onload: function(response) {
             msg = response.responseText;
@@ -101,7 +102,7 @@ function getBasicJson(){
     });
 }
 function isBasicJson(){
-    return GM_getValue("AnimeBro3",false);
+    return GM_getValue("vlee14.1",false);
 }
 
 function factoryReset(){
